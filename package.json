@@ -6,7 +6,9 @@
   "author": "Shiono Yoshihide <shiono.yoshihide@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server/main.ts"
+    "dev": "nodemon server/main.ts",
+    "build": "tsc --project tsconfig.server.json",
+    "start": "cross-env NODE_ENV=production node dist/main.js"
   },
   "dependencies": {
     "@react-ssr/express": "^0.7.0",
