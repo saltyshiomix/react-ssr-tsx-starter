@@ -9,7 +9,7 @@
     "dev": "nodemon server.ts"
   },
   "dependencies": {
-    "@react-ssr/express": "^0.6.5",
+    "@react-ssr/express": "^0.7.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
