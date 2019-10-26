@@ -1,6 +1,6 @@
 {
   "watch": [
-    "server.ts"
+    "server"
   ],
   "env": {
     "NODE_ENV": "development"

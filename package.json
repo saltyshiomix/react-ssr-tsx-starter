@@ -6,7 +6,7 @@
   "author": "Shiono Yoshihide <shiono.yoshihide@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server.ts"
+    "dev": "nodemon server/main.ts"
   },
   "dependencies": {
     "@react-ssr/express": "^0.7.0",
