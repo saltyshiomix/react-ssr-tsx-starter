@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Layout } from '../components';
+import Head from '@react-ssr/express/head';
+import { Layout } from '../components/Layout';
 
 interface IndexProps {
   user: any;
@@ -7,21 +8,16 @@ interface IndexProps {
 }
 
 const Index = (props: IndexProps) => {
-  const {
-    user,
-    script,
-  } = props;
-
   const [message, setMessage] = useState('waiting...');
 
   const onClick = () => setMessage('This is a react-ssr!');
 
   return (
-    <Layout
-      title="An example of @react-ssr/express"
-      script={script}
-    >
-      <p>Hello {user.name}!</p>
+    <Layout script={props.script}>
+      <Head>
+        <title>An example of @react-ssr/express</title>
+      </Head>
+      <p>Hello {props.user.name}!</p>
       <button onClick={onClick}>Click Me</button>
       <p>Message from state: {message}</p>
     </Layout>
