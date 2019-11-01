@@ -4,7 +4,6 @@ import { Layout } from '../components/Layout';
 
 interface IndexProps {
   user: any;
-  script: string;
 }
 
 const Index = (props: IndexProps) => {
@@ -13,7 +12,7 @@ const Index = (props: IndexProps) => {
   const onClick = () => setMessage('This is a react-ssr!');
 
   return (
-    <Layout script={props.script}>
+    <Layout>
       <Head>
         <title>An example of @react-ssr/express</title>
       </Head>
