@@ -23,7 +23,7 @@
     "@types/react-dom": "^16.9.4",
     "cross-env": "^6.0.3",
     "nodemon": "^2.0.1",
-    "ts-node": "^8.5.2",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.2"
   }
 }
